@@ -10,7 +10,7 @@ const sections = [
   ['Cookies and device controls', 'Cookies and similar technologies may collect usage information. You can control cookies through browser or device settings, though disabling them may affect certain Platform features. Device permissions for location, SMS, calls and other features can be managed through your device settings.'],
   ['Security and retention', 'Torkk uses reasonable safeguards designed to protect information. No internet transmission or storage system can be guaranteed completely secure. Information may be retained for as long as necessary to provide Services, meet business needs, resolve disputes, enforce agreements and comply with legal obligations.'],
   ['Your choices and rights', 'You may review or update certain account information, manage device permissions and contact Torkk with questions or requests about your information. Requests may be subject to identity verification and applicable law.'],
-  ['Changes and contact', 'Torkk may update this Policy from time to time by posting a revised version on the Platform. For privacy questions or requests, contact support@torkk.in or +91 93105 19079.'],
+  ['Changes and contact', 'Torkk may update this Policy from time to time by posting a revised version on the Platform. For privacy questions or requests, contact support@torkk.in.'],
 ]
 
 export default function PrivacyPage() {

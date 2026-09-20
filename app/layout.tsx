@@ -5,6 +5,7 @@ import './route-styles.css'
 import './ride/ride.css'
 import './motion-upgrade.css'
 import './premium-overrides.css'
+import './final-overrides.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),

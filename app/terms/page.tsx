@@ -13,7 +13,7 @@ const sections = [
   ['Disclaimers and limitation of liability', 'The Platform and its content are provided for general information and may contain errors or interruptions. Torkk does not guarantee uninterrupted, error-free operation or the conduct of Captains. To the extent permitted by law, Torkk is not liable for indirect, incidental, special or consequential loss arising from use of or inability to use the Platform or Services.'],
   ['Suspension and termination', 'Torkk may suspend, restrict or terminate your account or access to the Platform where required for security, legal compliance, fraud prevention, misuse or breach of these Terms. You may stop using the Services at any time.'],
   ['Governing law', 'These Terms are governed by the laws of India. Disputes will be subject to the applicable courts and legal process in India.'],
-  ['Contact', 'For questions about these Terms, contact Torkk at support@torkk.in or +91 93105 19079.'],
+  ['Contact', 'For questions about these Terms, contact Torkk at support@torkk.in.'],
 ]
 
 export default function TermsPage() {
