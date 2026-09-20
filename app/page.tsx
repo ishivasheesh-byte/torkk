@@ -30,7 +30,7 @@ const faqs = [
   ['How can I contact support?', 'Reach us at support@torkk.in or call +91 93105 19079.'],
 ]
 
-function Logo() { return <a href="#top" className="flex items-center gap-2.5" aria-label="Torkk home"><span className="logo-mark">t</span><span className="text-[22px] font-black tracking-[-0.06em]">torkk</span></a> }
+function Logo() { return <a href="#top" className="brand-logo" aria-label="Torkk home"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-12%20at%2010.15.52%20PM-RVcx63Lp8iR09Psr6gm1msmBQmdFde.jpeg" alt="Torkk logo" /><span>torkk</span></a> }
 
 function Button({ children, href = '#download', secondary = false }: { children: React.ReactNode; href?: string; secondary?: boolean }) {
   return <a href={href} className={secondary ? 'btn btn-secondary' : 'btn btn-primary'}>{children}<ArrowUpRight size={16} /></a>
