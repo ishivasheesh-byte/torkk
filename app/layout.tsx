@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import './route-styles.css'
 import './ride/ride.css'
+import './motion-upgrade.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),
