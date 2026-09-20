@@ -1,0 +1,2 @@
+import { SimplePage } from '@/components/site-pages'
+export default function Page(){return <SimplePage eyebrow="Legal" title={<>Cancellation<br/><em>&amp; refunds.</em></>} copy="Service-specific cancellation and refund terms may vary by ride, service and geography." sections={[{title:'General terms',body:'Cancellation, refund and adjustment eligibility are governed by the applicable service terms shown in the Torkk app at the time of booking.'},{title:'Questions',body:'For help with a cancellation or refund, contact support@torkk.in with your ride details.'}]}/>}

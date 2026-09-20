@@ -1,0 +1,2 @@
+import { AppDownloadCards, PageHero, SiteShell } from '@/components/site-pages'
+export default function DownloadPage(){return <SiteShell><PageHero eyebrow="Torkk apps" title={<>Get Torkk<br/><em>on your phone.</em></>} copy="Choose the app for your journey. Store availability may vary by region."/><section className="inner-section"><div className="container"><AppDownloadCards/></div></section></SiteShell>}
