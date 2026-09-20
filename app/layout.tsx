@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import './route-styles.css'
+import './ride/ride.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),
