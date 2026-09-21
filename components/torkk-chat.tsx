@@ -9,13 +9,15 @@ const prompts = ['Ride with Torkk', 'Drive with Torkk', 'Torkk Parcel', 'Safety'
 
 function replyFor(text: string) {
   const query = text.toLowerCase()
-  if (query.includes('ride') || query.includes('book') || query.includes('bike') || query.includes('auto') || query.includes('cab')) return 'Choose Ride from the menu to explore Bike, Auto, Cab, EV Cab and XL Cab. Download the Torkk app to request a ride across Delhi NCR.'
-  if (query.includes('drive') || query.includes('driver')) return 'To drive with Torkk, choose Drive and submit your details. Our team will help with onboarding and document verification.'
+  if (query.includes('schedule') || query.includes('scheduled')) return 'Scheduled rides are available through the Torkk customer app. Download the app to plan your journey; this website does not process bookings.'
+  if (query.includes('ride') || query.includes('book') || query.includes('bike') || query.includes('auto') || query.includes('cab')) return 'Ride booking is available through the Torkk app. Explore Bike, Auto, Cab, EV Cab and XL Cab on this website, then download the app to request a ride across Delhi NCR.'
+  if (query.includes('drive') || query.includes('driver')) return 'You can join Torkk through the Driver App. Visit Drive with Torkk to learn about the journey, then submit a driver enquiry if you need help.'
   if (query.includes('parcel') || query.includes('package')) return 'Torkk Parcel helps you send packages across Delhi NCR. Choose Parcel to learn more or contact support for help with a specific delivery.'
   if (query.includes('safety') || query.includes('safe')) return 'Safety is built into every Torkk journey with verified partners, trip details and support when you need it.'
   if (query.includes('pay') || query.includes('payment')) return 'For payment questions, please share your trip details with support@torkk.in and our team will help.'
+  if (query.includes('subscription') || query.includes('pass')) return 'For current subscription or pass availability, please check the Torkk app or contact support@torkk.in. Availability can vary by service and location.'
   if (query.includes('app') || query.includes('download')) return 'You can download Torkk from the App Store or Google Play using the Download App button above.'
-  return 'I can help with Torkk rides, drivers, parcel services, safety, payments and app support. What would you like to know?'
+  return 'I’m not sure about that. I can help with Torkk rides, drivers, parcel services, safety, scheduled rides, payments and app support. Would you like to contact Torkk support?'
 }
 
 export function TorkkChat() {
