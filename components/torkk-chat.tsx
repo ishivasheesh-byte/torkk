@@ -9,7 +9,7 @@ const prompts = ['Ride with Torkk', 'Drive with Torkk', 'Torkk Parcel', 'Safety'
 
 export function TorkkChat() {
   const [open, setOpen] = useState(false)
-  const { messages, sendMessage, status } = useChat({ transport: new DefaultChatTransport({ api: '/api/chat' }) })
+  const { messages, sendMessage, status, error } = useChat({ transport: new DefaultChatTransport({ api: '/api/chat' }) })
   const [input, setInput] = useState('')
   const busy = status === 'submitted' || status === 'streaming'
 
@@ -25,7 +25,7 @@ export function TorkkChat() {
       <header><div><strong>Torkk AI</strong><span>Here to help you move</span></div><button onClick={() => setOpen(false)} aria-label="Close chat"><X size={17} /></button></header>
       <div className="torkk-chat-messages" aria-live="polite">
         {messages.length === 0 && <div className="torkk-chat-welcome"><Sparkles size={18} /><p>Hi, how can I help?</p></div>}
-        {messages.map(message => <div className={`torkk-message ${message.role}`} key={message.id}>{message.parts?.map((part, index) => part.type === 'text' ? <span key={index}>{part.text}</span> : null)}</div>)}
+        {messages.map(message => <div className={`torkk-message ${message.role}`} key={message.id}>{message.parts?.map((part, index) => part.type === 'text' ? <span key={index}>{part.text}</span> : null)}</div>)}{error && <div className="torkk-chat-error" role="alert">Torkk AI is temporarily unavailable. Please contact support@torkk.in.</div>}
       </div>
       <div className="torkk-chat-prompts">{prompts.map(prompt => <button key={prompt} onClick={() => submit(prompt)}>{prompt}</button>)}</div>
       <form onSubmit={event => { event.preventDefault(); void submit(input) }}><input value={input} onChange={event => setInput(event.target.value)} placeholder="Ask about Torkk…" aria-label="Message Torkk AI" /><button type="submit" disabled={busy || !input.trim()} aria-label="Send message"><Send size={16} /></button></form>
