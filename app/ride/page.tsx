@@ -13,10 +13,10 @@ const rides = [
   { slug: 'xl-cab', name: 'XL Cab', icon: Users, tone: 'purple', description: 'More room for journeys that need extra space.', features: ['More space where available', 'Group and family travel', 'Comfortable longer journeys'] },
 ] as const
 
-const steps = ['Choose your destination', 'Select your ride', 'Confirm your booking', 'Ride with Torkk']
+const steps = ['Choose your destination', 'Select your ride', 'Review the trip in the app', 'Ride with Torkk']
 
 function AppPreview() {
-  return <div className="ride-preview-wrap"><div className="preview-label">App Preview</div><div className="phone-preview"><div className="phone-notch" /><div className="app-top"><span>Good morning</span><b>Torkk</b></div><div className="map-preview"><div className="map-line" /><div className="map-pin pickup"><MapPin size={15} /></div><div className="map-pin destination"><MapPin size={15} /></div></div><div className="booking-sheet"><span className="eyebrow">BOOK A RIDE</span><div className="location-row"><MapPin size={16} /><span>Pickup location</span></div><div className="location-row"><Navigation size={16} /><span>Where to?</span></div><div className="fare-row"><span>Choose your ride</span><b>Estimated fare</b></div><div className="mini-rides"><span className="selected"><Bike size={14} /> Bike</span><span><Car size={14} /> Cab</span><span><Users size={14} /> XL</span></div><button>Book Ride</button></div></div></div>
+  return <div className="ride-preview-wrap"><div className="preview-label">App Preview</div><div className="phone-preview"><div className="phone-notch" /><div className="app-top"><span>Good morning</span><b>Torkk</b></div><div className="map-preview"><div className="map-line" /><div className="map-pin pickup"><MapPin size={15} /></div><div className="map-pin destination"><MapPin size={15} /></div></div><div className="booking-sheet"><span className="eyebrow">BOOK A RIDE</span><div className="location-row"><MapPin size={16} /><span>Pickup location</span></div><div className="location-row"><Navigation size={16} /><span>Where to?</span></div><div className="fare-row"><span>Choose your ride</span><b>Estimated fare</b></div><div className="mini-rides"><span className="selected"><Bike size={14} /> Bike</span><span><Car size={14} /> Cab</span><span><Users size={14} /> XL</span></div><span className="app-preview-note">Booking happens in the Torkk app</span></div></div></div>
 }
 
 export default function RidePage() {

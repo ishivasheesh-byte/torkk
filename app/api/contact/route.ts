@@ -15,6 +15,7 @@ export async function POST(request: Request) {
     if (body?.company) return NextResponse.json({ ok: true })
     if (!name || !email || !category || !message) return NextResponse.json({ error: 'All fields are required.' }, { status: 400 })
     if (!isValidEmail(email)) return NextResponse.json({ error: 'Please enter a valid email.' }, { status: 400 })
+    if (phone && !/^\+?[0-9\s()-]{10,20}$/.test(phone)) return NextResponse.json({ error: 'Please enter a valid mobile number.' }, { status: 400 })
 
     await db.insert(enquiries).values({ name, email, phone, category, message })
     return NextResponse.json({ ok: true, message: 'Enquiry received.' })
