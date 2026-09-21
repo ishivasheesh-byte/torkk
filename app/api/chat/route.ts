@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     const body = await request.json() as { messages?: UIMessage[] }
     if (!Array.isArray(body.messages) || body.messages.length === 0) return Response.json({ error: 'Messages are required.' }, { status: 400 })
     const messages = body.messages.slice(-12)
-    const result = streamText({ model: 'google/gemini-3.1-flash-lite', system, messages: await convertToModelMessages(messages) })
+    const result = streamText({ model: 'google/gemini-2.5-flash', system, messages: await convertToModelMessages(messages) })
     return result.toUIMessageStreamResponse()
   } catch {
     return Response.json({ error: 'Unable to reach Torkk AI.' }, { status: 500 })
