@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import { PageHero, SiteShell } from '@/components/site-pages'
 
-const categories = ['General Enquiry', 'Customer Support', 'Driver Enquiry', 'Partnership', 'Business Enquiry', 'Corporate Enquiry', 'Feedback', 'Other']
+const categories = ['Customer Support', 'Driver', 'Partnership', 'Business / Corporate', 'Feedback', 'General']
 
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
