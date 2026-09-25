@@ -9,6 +9,7 @@ import './final-overrides.css'
 import './chat.css'
 import './monochrome.css'
 import './review-updates.css'
+import './gradient-system.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),
