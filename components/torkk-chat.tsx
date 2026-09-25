@@ -11,7 +11,7 @@ function replyFor(text: string) {
   const query = text.toLowerCase()
   if (query.includes('schedule') || query.includes('scheduled')) return 'Scheduled rides are available through the Torkk customer app. Download the app to plan your journey; this website does not process bookings.'
   if (query.includes('ride') || query.includes('book') || query.includes('bike') || query.includes('auto') || query.includes('cab')) return 'Ride booking is available through the Torkk app. Explore Bike, Auto, Cab, EV Cab and XL Cab on this website, then download the app to request a ride across Delhi NCR.'
-  if (query.includes('drive') || query.includes('driver')) return 'You can join Torkk through the Driver App. Visit Drive with Torkk to learn about the journey, then submit a driver enquiry if you need help.'
+  if (query.includes('drive') || query.includes('driver')) return 'You can join Torkk through Torkk Driver. Visit Drive with Torkk to learn about the journey, then submit a driver enquiry if you need help.'
   if (query.includes('parcel') || query.includes('package')) return 'Torkk Parcel helps you send packages across Delhi NCR. Choose Parcel to learn more or contact support for help with a specific delivery.'
   if (query.includes('safety') || query.includes('safe')) return 'Safety is built into every Torkk journey with verified partners, trip details and support when you need it.'
   if (query.includes('pay') || query.includes('payment')) return 'For payment questions, please share your trip details with support@torkk.in and our team will help.'
