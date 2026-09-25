@@ -10,6 +10,7 @@ import './chat.css'
 import './monochrome.css'
 import './review-updates.css'
 import './gradient-system.css'
+import './mobility-os.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),
