@@ -1,0 +1,28 @@
+@media (max-width: 760px) {
+  .ref-hero {
+    min-height: 560px;
+    background-position: 58% center;
+  }
+
+  .ref-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(5, 15, 18, 0.68), rgba(5, 15, 18, 0.8));
+    pointer-events: none;
+  }
+
+  .ref-hero-inner {
+    min-height: 560px;
+    z-index: 1;
+  }
+
+  .ref-hero-copy {
+    max-width: 360px;
+  }
+
+  .ref-hero h1 {
+    line-height: 1.04;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+  }
+}
