@@ -13,6 +13,7 @@ import './gradient-system.css'
 import './mobility-os.css'
 import './reference-home.css'
 import './reference-mobile.css'
+import './waitlist.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),
