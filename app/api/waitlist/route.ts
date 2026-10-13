@@ -10,13 +10,15 @@ export async function POST(request: Request) {
     const phone = String(body?.phone ?? '').trim()
     const city = String(body?.city ?? '').trim()
     const service = String(body?.service ?? '').trim()
+    const category = String(body?.category ?? '').trim()
     const consent = body?.consent === true
 
-    if (!name || !email || !emailPattern.test(email) || !consent) {
-      return NextResponse.json({ error: 'Please provide your name, a valid email, and consent to receive launch updates.' }, { status: 400 })
+    const validPhone = /^\+?[0-9\s()-]{7,20}$/.test(phone)
+    if (!name || (!email && !phone) || (email && !emailPattern.test(email)) || (phone && !validPhone) || !consent || !['customer', 'male-driver', 'female-driver'].includes(category)) {
+      return NextResponse.json({ error: 'Please provide your name, an email or mobile number, a valid category, and consent to receive launch updates.' }, { status: 400 })
     }
 
-    if (phone && !/^\+?[0-9\s()-]{7,20}$/.test(phone)) {
+    if (phone && !validPhone) {
       return NextResponse.json({ error: 'Please enter a valid mobile number.' }, { status: 400 })
     }
 
