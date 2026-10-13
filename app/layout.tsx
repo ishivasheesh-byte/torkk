@@ -14,10 +14,11 @@ import './mobility-os.css'
 import './reference-home.css'
 import './reference-mobile.css'
 import './waitlist.css'
+import './new-home.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://torkk.in'),
-  title: 'Torkk — Fairer Rides. Safer Journeys. | Delhi NCR',
+  title: 'Torkk — Move with more clarity',
   description: 'Torkk is a safety-focused mobility platform offering bikes, autos, cabs, EV cabs and XL cabs across Delhi NCR.',
   keywords: ['Torkk', 'Torkk rides', 'Torkk app', 'Torkk Delhi NCR', 'bike taxi Delhi NCR', 'cab Delhi NCR', 'Torkk Driver', 'Torkk Parcel'],
   openGraph: { title: 'Torkk — Fairer Rides. Safer Journeys.', description: 'A smarter, safer and more transparent way to move across Delhi NCR.', url: 'https://torkk.in', siteName: 'Torkk', type: 'website' },
